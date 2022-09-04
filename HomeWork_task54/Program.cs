@@ -55,13 +55,12 @@ void GetSort(int[,] mat)
         {
             for (int k = j + 1; k < 6; k++)
             {
-                if (mat[i, j] > mat[i, k])
+                if (mat[i, j] < mat[i, k])
                 {
                     int t = mat[i, j];
                     mat[i, j] = mat[i, k];
                     mat[i, k] = t;
                 }
-
             }
         }
     }
